@@ -1,75 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>JavaScript Examples</title>
-        <script>
-            function showMessage(){
-                alert('This is from Internal function!')
-            }
-            function add(){
-                let x = parseInt(document.getElementById('first').value)
-                let y = parseInt(document.getElementById('second').value)
-                document.getElementById('result').innerHTML =  x + y
-                document.getElementById('result').style = 'font-size:25px;color:red'
-            }
-            function sub(){
-                let x = parseInt(document.getElementById('first').value)
-                let y = parseInt(document.getElementById('second').value)
-                document.getElementById('result').innerHTML =  x - y
-                document.getElementById('result').style = 'font-size:25px;color:red'
-            }
-            function mul(){
-                let x = parseInt(document.getElementById('first').value)
-                let y = parseInt(document.getElementById('second').value)
-                document.getElementById('result').innerHTML =  x * y
-                document.getElementById('result').style = 'font-size:25px;color:red'
-            }
-            function divide(){
-                let x = parseInt(document.getElementById('first').value)
-                let y = parseInt(document.getElementById('second').value)
-                document.getElementById('result').innerHTML =  x / y
-                document.getElementById('result').style = 'font-size:25px;color:red'
-            }
-            function mod(){
-                let x = parseInt(document.getElementById('first').value)
-                let y = parseInt(document.getElementById('second').value)
-                document.getElementById('result').innerHTML =  x % y
-                document.getElementById('result').style = 'font-size:25px;color:red'
-            }
-        </script>
-    </head>
-    <body>
-        <h3 style="color: blue; font-size: 30px; text-align: center;">
-            In-Line JavaScript
-        </h3>
-        <button style="background-color: aqua; color: red; width: 150px;height: 50px;
-            border-radius: 10px;font-size: 25px;" onclick="alert('Welcome to JavaScript!')">
-            Click Me!
-        </button>
-        <hr height="10px">
-        <h3 style="color: blue; font-size: 30px; text-align: center;">
-            Internal JavaScript
-        </h3>
-        <button style="background-color: aqua; color: red; width: 150px;height: 50px;
-            border-radius: 10px;font-size: 25px;" onclick="showMessage()">
-            Click Me!
-        </button>
-        <h3 style="color: blue; font-size: 30px; text-align: center;">
-            Arthimetic Operations
-        </h3>
-        <div style="display: flex; flex-direction: column;">
-            <div style="display: flex; flex-direction: column;gap: 10px;">
-                <p>Enter the Nunber: <input type="text" id="first" placeholder="Enter Number"></p>
-                <p>Enter the Nunber: <input type="text" id="second" placeholder="Enter Number"></p>
-            </div>
-            <div style="display: flex; justify-content: center;align-items: center; gap:10px;">
-                <button onclick="add()">ADD</button>
-                <button onclick="sub()">SUB</button>
-                <button onclick="mul()">MUL</button>
-                <button onclick="divide()">Divide</button>
-                <button onclick="mod()">Mod</button>
-            </div>
-            <p id="result"></p>
-        </div>
-    </body>
+  <head>
+    <title>JavaScript Examples</title>
+    <script>
+      function showMessage() {
+        alert("This is from Internal function!");
+      }
+      function add() {
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = x + y;
+        document.getElementById("result").style = "font-size:25px;color:red";
+      }
+      function sub() {
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = x - y;
+        document.getElementById("result").style = "font-size:25px;color:red";
+      }
+      function mul() {
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = x * y;
+        document.getElementById("result").style = "font-size:25px;color:red";
+      }
+      function divide() {
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = x / y;
+        document.getElementById("result").style = "font-size:25px;color:red";
+      }
+      function mod() {
+        let x = parseInt(document.getElementById("first").value);
+        let y = parseInt(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = x % y;
+        document.getElementById("result").style = "font-size:25px;color:red";
+      }
+    </script>
+  </head>
+  <body>
+    <h3 style="color: blue; font-size: 30px; text-align: center">
+      In-Line JavaScript
+    </h3>
+    <button
+      style="
+        background-color: aqua;
+        color: red;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 25px;
+      "
+      onclick="alert('Welcome to JavaScript!')"
+    >
+      Click Me!
+    </button>
+    <hr height="10px" />
+    <h3 style="color: blue; font-size: 30px; text-align: center">
+      Internal JavaScript
+    </h3>
+    <button
+      style="
+        background-color: aqua;
+        color: red;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 25px;
+      "
+      onclick="showMessage()"
+    >
+      Click Me!
+    </button>
+    <h3 style="color: blue; font-size: 30px; text-align: center">
+      Arthimetic Operations
+    </h3>
+    <div style="display: flex; flex-direction: column;justify-content: center;align-items: center;">
+      <div style="display: flex; flex-direction: column;">
+        <p>
+          Enter the Nunber:
+          <input type="text" id="first" placeholder="Enter Number" />
+        </p>
+        <p>
+          Enter the Nunber:
+          <input type="text" id="second" placeholder="Enter Number" />
+        </p>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <button onclick="add()">ADD</button>
+        <button onclick="sub()">SUB</button>
+        <button onclick="mul()">MUL</button>
+        <button onclick="divide()">Divide</button>
+        <button onclick="mod()">Mod</button>
+      </div>
+      <p id="result"></p>
+    </div>
+    <hr />
+    <h3 style="color: blue; font-size: 30px; text-align: center">
+      External JavaScript
+    </h3>
+    <button onclick="calculate()">Add Nums</button>
+    <p id="data"></p>
+    <script src="external.js"></script>
+  </body>
 </html>
