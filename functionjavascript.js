@@ -36,3 +36,48 @@ let mul = function (a,b){
 }
 
 console.log(mul(10,2))
+
+// Arrow Function
+
+let sub = (a,b) => a - b
+console.log(sub(10,5))
+
+let add1 = (a,b) => { return a + b }
+console.log(add1(10,5))
+
+// Callback Function
+function guest1(){
+    console.log("calling guest1 function")
+}
+
+function guest2(){
+    console.log("calling guest2 function")
+}
+
+function callbackfunction(callback){
+    callback()
+}
+
+callbackfunction(guest1)
+callbackfunction(guest2);
+
+//Callback function with arguments
+function add2(x,y){
+    return x + y
+}
+
+function sub2(x,y){
+    return x - y
+}
+
+function mul2(x,y){
+    return x * y
+}
+
+function callbackfunction2(x,y,callback){
+    return callback(x,y)
+}
+
+console.log(callbackfunction2(10,5,add2))
+console.log(callbackfunction2(10,5,sub2))
+console.log(callbackfunction2(10,5,mul2))
