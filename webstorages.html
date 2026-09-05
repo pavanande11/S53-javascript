@@ -1,0 +1,38 @@
+/*
+Local Storage and Session Storage
+*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Storage Example</title>
+    <script>
+        function setLocalStorage() {
+            let key = document.getElementById("localKey").value;
+            let value = document.getElementById("localValue").value;
+            localStorage.setItem(key, value);
+            alert("Local Storage Set: " + key + " = " + value);
+        }
+
+        function getLocalStorage() {
+            let key = document.getElementById("getLocalKey").value;
+            let value = localStorage.getItem(key);
+            document.getElementById("localResult").innerHTML = "Local Storage Value: " + value;
+        }
+
+        function clearLocalStorage() {
+            localStorage.clear();
+            document.getElementById("localResult").innerHTML = "Local Storage Cleared";
+        }
+    </script>
+</head>
+<body>
+    <h3>Local Storage Example</h3>
+    Enter Key <input type="text" id="localKey" placeholder="Enter key"><br>
+    Enter Value <input type="text" id="localValue" placeholder="Enter value"><br>
+    <button onclick="setLocalStorage()">Set Local Storage</button><br><br>
+    Enter Key to Retrieve <input type="text" id="getLocalKey" 
+                        placeholder="Enter key to retrieve"><br>
+    <button onclick="getLocalStorage()">Get Local Storage</button><br>
+    <p id="localResult"></p><br>
+    <button onclick="clearLocalStorage()">Clear Local Storage</button><br>
+</body>
